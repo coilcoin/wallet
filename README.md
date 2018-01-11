@@ -1,3 +1,3 @@
-# Coil Wallet
+# Wallet
 
-This project is currently under active development.
+This web wallet is currently very experimental (not designed for extensive use).

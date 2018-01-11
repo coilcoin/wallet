@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="privateKey" data="{{ privateKey }}">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>New Transaction - Coil Wallet</title>
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="new-transaction">
+			<h2>New Transaction</h2>
+
+			<form action="/send" method="POST">
+				<input spellcheck="false" class="inp" type="text" placeholder="Recipient's Address" id="recipient-address" name="recipient"><br>
+				<input class="inp" type="number" value="0.0000" step="0.00001" min="0.00001" max="1000" name="amount"><br>
+				<input type="submit" value="Send" id="button">
+			</form>
+		</div>
+
+		<br>
+		<a href="/">Return</a>
+	</div>
+	<script type="text/javascript" src="/eel.js"></script>
+</body>
+</html>
