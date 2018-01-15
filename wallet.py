@@ -1,8 +1,17 @@
-# wallet.py
-# simple software wallet for coil
-# MIT Licence
+from PyQt4 import QtGui
+import sys
+import design
 
-import eel
+class App(QtGui.QMainWindow, design.Ui_MainWindow):
+    def __init__(self, parent=None):
+        super(App, self).__init__(parent)
+        self.setupUi(self)
 
-eel.init("web")
-eel.start("wallet.html")
+def main():
+    app = QtGui.QApplication(sys.argv)
+    form = App()
+    form.show()
+    app.exec_()
+
+if __name__ == "__main__":
+    main()
